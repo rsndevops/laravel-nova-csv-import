@@ -1,46 +1,46 @@
 {
-    "name": "simonhamp/laravel-nova-csv-import",
-    "description": "A fully-fledged CSV import tool for Laravel Nova.",
-    "keywords": [
-        "laravel",
-        "nova"
-    ],
-    "license": "MIT",
-    "require": {
-        "php": "^8.0",
-        "laravel/nova": "^4.0",
-        "maatwebsite/excel": "^3.1"
-    },
-    "require-dev": {
-        "laravel/pint": "^1.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "SimonHamp\\LaravelNovaCsvImport\\": "src/"
-        }
-    },
-    "scripts": {
-        "lint": "@pint",
-        "lint:test": "@pint --test",
-        "lint:dirty": "@pint --dirty",
-        "pint": "vendor/bin/pint"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "SimonHamp\\LaravelNovaCsvImport\\ToolServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ]
+  "name": "rsndevops/laravel-nova-csv-import",
+  "description": "A fully-fledged CSV import tool for Laravel Nova.",
+  "keywords": [
+    "laravel",
+    "nova"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "laravel/nova": "^4.0",
+    "maatwebsite/excel": "^3.1"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "rsndevops\\LaravelNovaCsvImport\\": "src/"
+    }
+  },
+  "scripts": {
+    "lint": "@pint",
+    "lint:test": "@pint --test",
+    "lint:dirty": "@pint --dirty",
+    "pint": "vendor/bin/pint"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "rsndevops\\LaravelNovaCsvImport\\ToolServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://nova.laravel.com"
+    }
+  ]
 }
