@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'importer' => SimonHamp\LaravelNovaCsvImport\Importer::class,
+    'importer' => rsndevops\LaravelNovaCsvImport\Importer::class,
 
     'disk' => null,
 ];

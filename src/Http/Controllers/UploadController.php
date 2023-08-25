@@ -1,6 +1,6 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Http\Controllers;
+namespace rsndevops\LaravelNovaCsvImport\Http\Controllers;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Facades\File;

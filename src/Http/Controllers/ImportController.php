@@ -1,6 +1,6 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Http\Controllers;
+namespace rsndevops\LaravelNovaCsvImport\Http\Controllers;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
@@ -12,7 +12,7 @@ use Laravel\Nova\Nova;
 use Laravel\Nova\Resource;
 use Laravel\Nova\Rules\Relatable;
 use Maatwebsite\Excel\Concerns\ToModel as ModelImporter;
-use SimonHamp\LaravelNovaCsvImport\Http\Requests\ImportNovaRequest;
+use rsndevops\LaravelNovaCsvImport\Http\Requests\ImportNovaRequest;
 
 class ImportController
 {

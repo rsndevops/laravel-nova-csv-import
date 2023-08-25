@@ -1,6 +1,6 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport;
+namespace rsndevops\LaravelNovaCsvImport;
 
 use Illuminate\Http\Request;
 use Laravel\Nova\Menu\MenuSection;

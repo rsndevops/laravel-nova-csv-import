@@ -1,9 +1,9 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Modifiers;
+namespace rsndevops\LaravelNovaCsvImport\Modifiers;
 
 use Illuminate\Support\Str as LaravelStr;
-use SimonHamp\LaravelNovaCsvImport\Contracts\Modifier;
+use rsndevops\LaravelNovaCsvImport\Contracts\Modifier;
 
 class Prefix implements Modifier
 {

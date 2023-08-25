@@ -1,6 +1,6 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Http\Requests;
+namespace rsndevops\LaravelNovaCsvImport\Http\Requests;
 
 use Laravel\Nova\Http\Requests\NovaRequest;
 

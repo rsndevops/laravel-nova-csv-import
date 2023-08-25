@@ -1,9 +1,9 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Modifiers;
+namespace rsndevops\LaravelNovaCsvImport\Modifiers;
 
 use Illuminate\Support\Facades\Hash;
-use SimonHamp\LaravelNovaCsvImport\Contracts\Modifier;
+use rsndevops\LaravelNovaCsvImport\Contracts\Modifier;
 use Illuminate\Support\Str;
 
 class Password implements Modifier

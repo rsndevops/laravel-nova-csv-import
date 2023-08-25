@@ -1,6 +1,6 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Contracts;
+namespace rsndevops\LaravelNovaCsvImport\Contracts;
 
 interface Modifier
 {

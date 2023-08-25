@@ -1,8 +1,8 @@
 <?php
 
-namespace SimonHamp\LaravelNovaCsvImport\Modifiers;
+namespace rsndevops\LaravelNovaCsvImport\Modifiers;
 
-use SimonHamp\LaravelNovaCsvImport\Contracts\Modifier;
+use rsndevops\LaravelNovaCsvImport\Contracts\Modifier;
 
 class Hash implements Modifier
 {
