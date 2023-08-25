@@ -1,5 +1,7 @@
 # Laravel Nova CSV Import
 
+# ALL CREDIT TO ORIGINAL CREATOR SEE SPONSOR DETAILS BELOW!
+
 [![Latest Stable Version](https://poser.pugx.org/simonhamp/laravel-nova-csv-import/v/stable?style=for-the-badge)](https://packagist.org/packages/simonhamp/laravel-nova-csv-import) [![Total Downloads](https://poser.pugx.org/simonhamp/laravel-nova-csv-import/downloads?style=for-the-badge)](https://packagist.org/packages/simonhamp/laravel-nova-csv-import) [![License](https://poser.pugx.org/simonhamp/laravel-nova-csv-import/license?style=for-the-badge)](https://packagist.org/packages/simonhamp/laravel-nova-csv-import)
 
 [![RINGER](https://www.ringerhq.com/images/get-support-on-ringer.svg)](https://www.ringerhq.com/i/simonhamp/laravel-nova-csv-import)
@@ -14,7 +16,7 @@ You can even modify values as they're being imported to add hashing or other man
 values and now even **combine multiple values to be imported into a single field**!
 
 > This package was originally built on top of work done by Sparclex on the
-[nova-import-card](https://github.com/Sparclex/nova-import-card) package.
+> [nova-import-card](https://github.com/Sparclex/nova-import-card) package.
 
 ![Laravel Nova CSV Import Screenshot](https://raw.githubusercontent.com/simonhamp/laravel-nova-csv-import/master/screenshots/readme.png)
 
@@ -22,6 +24,7 @@ values and now even **combine multiple values to be imported into a single field
 v0.3.0 or lower. Please also be aware that versions prior to v0.4.0 will no longer be maintained.**
 
 ## Sponsorship
+
 CSV Import is completely free to use for personal or commercial use, however if you're using it for commercial gain
 I'd really appreciate your support! I accept [donations via GitHub](https://github.com/sponsors/simonhamp).
 
@@ -79,11 +82,12 @@ public function boot()
 ```
 
 ## Options
+
 By default, _all_ of your Nova Resources will be available for import. However, there are a number of ways that you can
 explicitly limit what's available for importing.
 
 `public static $canImportResource = false;`  
-*Default:* `true`  
+_Default:_ `true`  
 Add this static property to your Resource to prevent it from showing up in the Nova CSV Import tool interface.
 
 `public static function canImportResource($request): bool`  
@@ -96,13 +100,12 @@ CSV Import aims to respect your Nova configuration, but there are times when you
 differently to your Nova interface. For that you can use the `excludeAttributesFromImport()` method:
 
 `public static function excludeAttributesFromImport(): array`  
-*Default:* `[]`  
+_Default:_ `[]`  
 Define a `excludeAttributesFromImport` method that returns an array of attribute names that you want to _exclude_ from
 being visible in the import tool for this Resource.
-  
 
-### Example 
-  
+### Example
+
 ```php
 // App\Nova\User
 public static function canImportResource(Request $request)
@@ -116,7 +119,8 @@ public static function excludeAttributesFromImport()
 }
 ```
 
-## Importer Class 
+## Importer Class
+
 This package uses [maatwebsite/excel](https://github.com/Maatwebsite/Laravel-Excel) behind the scenes to handle the
 actual import. You can find out more about
 [how importing works](https://docs.laravel-excel.com/3.1/imports/basics.html#importing-basics).
@@ -125,11 +129,13 @@ You can define your own importer class by providing the relevant class name in y
 config file.
 
 First, publish the config file:
+
 ```
 php artisan vendor:publish --tag=csv-import
-``` 
+```
 
 Then, define and register your own importer class:
+
 ```
 <?php
 
